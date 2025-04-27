@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Form</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formulário</h1>
+  </header>
+
+  <main>
+    <div id="section1">
+      <p>Para abrir o formulário clique no botão abaixo</p>
+      <button id="showForm">Abrir o formulário</button>
+    </div>
+
+    <div id="hiddenContent" class="hidden">
+      <div id="section2">
+        <h2>Form</h2>
+        <form id="myForm">
+          <label for="identification">Identificação</label><br>
+          <label for="email">Como você se identifica</label><br>
+          <div id="formIdentification">
+            <label><input type="checkbox" name="options[]" value="option1"> Mulher</label><br>
+            <label><input type="checkbox" name="options[]" value="option2"> Homem</label><br>
+            <label><input type="checkbox" name="options[]" value="option3"> Não quero responder</label><br>
+          </div>
+
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" min="8">
+          <p id="informationInput">Deve ter pelo menos 8 caracteres</p><br>
+
+          <label for="age">Idade</label>
+          <input type="number" id="age" name="age" min="4" max="99">
+          <p id="informationInput">Deve de 4 a 99 anos</p><br>
+
+          <input type="submit" value="Enviar">
+        </form>
+
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
